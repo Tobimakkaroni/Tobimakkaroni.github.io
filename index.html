@@ -17,7 +17,7 @@
             <div class="bar"></div>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="checkPassword()">Secrets</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">My Projects</a></li>
             <li><a href="#">Contact</a></li>
@@ -112,6 +112,19 @@
         setInterval(showNextItem, 30000);
 
         items[currentIndex].classList.add('active');
+    </script>
+
+    <script>
+        function checkPassword() {
+            var password = prompt("Bitte geben Sie das Passwort ein:");
+            var correctPassword = "ohaaa"; // na, du auch hier? huh.. das ist jetzt komisch. Jetzt gib schon das Passwort ein und guck dir an was du getan hast.
+
+            if (password === correctPassword) {
+                window.location.href = "secrets.html";
+            } else {
+                alert("Falsches Passwort");
+            }
+        }
     </script>
 </body>
 </html>
