@@ -1,58 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomatensaft!</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Welcome!</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <ul class="navbar-container">
-        <li class="navbar-item logo"><a href="#">Logo</a></li>
-        <li class="navbar-item"><a href="#">About</a></li>
-        <li class="navbar-item"><a href="#">Skills</a></li>
-        <li class="navbar-item"><a href="#">Projects</a></li>
-        <li class="navbar-item"><a href="#">Test</a></li>
-    </ul>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to my page</h1>
+            <p>I make websites!</p>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
 
-    <div class="hero-wrapper">
-        <div class="hero-section">
-            <img src="catimage.jpg" alt="cute cat">
-            <h1>Welcome to my page<br>I make websites!</h1>
-        </div>
-    </div>
-
-    <div class="projects-wrapper">
-        <div class="project-item">
-            <h1>Project 1</h1>
-            <img src="catimage.jpg" alt="cute cat">
-            <p>
-                Im going to write something interesting here! Sometime. Maybe tomorrow. It's also a very long text.
-            </p>
-        </div>
-        <div class="project-item">
-            <h1>Project 2</h1>
-            <img src="catimage.jpg" alt="cute cat">
-            <p>
-                Im going to write something interesting here! Sometime. Maybe tomorrow. It's also a very long text.
-            </p>
-        </div>
-        <div class="project-item">
-            <h1>Project 3</h1>
-            <img src="catimage.jpg" alt="cute cat">
-            <p>
-                Im going to write something interesting here! Sometime. Maybe tomorrow. It's also a very long text.
-            </p>
-        </div>
-        <div class="project-item">
-            <h1>Project 4</h1>
-            <img src="catimage.jpg" alt="cute cat">
-            <p>
-                Im going to write something interesting here! Sometime. Maybe tomorrow. It's also a very long text.
-            </p>
-        </div>
-    </div>
-
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
