@@ -106,6 +106,75 @@ body, html {
     background-color: #c23162;
 }
 
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.carousel-item h2 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+}
+
+.carousel-item p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: left;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls .prev, .carousel-controls .next {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controls .prev:hover, .carousel-controls .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 600px) {
@@ -115,14 +184,14 @@ body, html {
 
     .nav-links {
         position: absolute;
-        top: 60px;
-        right: 20px;
+        top: 53px;
+        right: 0;
         background-color: #FF204E;
         flex-direction: column;
         width: 100%;
         max-width: 200px;
         display: none;
-        border-radius: 8px;
+        border-radius: 4px;
         z-index: 1000;
     }
 
