@@ -1,140 +1,35 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD451P31X5"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GD451P31X5');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomatensaft!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Tobias Stark | Software Developer</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">Logo</a>
-        </div>
-        <div class="menu-icon" id="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#" onclick="checkPassword()">Secrets</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">My Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to my page</h1>
-            <p>My name is Tobi and I make websites!</p>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </section>
-
-    <section class="carousel">
-        <div class="carousel-container" id="carousel-container">
-            <div class="carousel-item">
-                <h2>Project 1</h2>
-                <img src="catimage.jpg" alt="Projekt 1 Bild">
-                <p>It's late at night, I go to bed
-                    But I can't get no rest
-                    My boyfriend quit, I'm almost dead
-                    I'll have to do my best
-                    I'm up and down, I feel so fat
-                    I ain't got no more fizz
-                    Don't even get to keep the cat
-                    But that's just how it is</p>
-            </div>
-            <div class="carousel-item">
-                <h2>Project 2</h2>
-                <img src="catimage.jpg" alt="Projekt 2 Bild">
-                <p>I sing:
-                    Wap-bap, ba-da-di-da-da
-                    Wap-bap, ba-da-di-da-da
-                    Wap-bap, ba-da-di-da-da-da
-                    Everybody sing:
-                    Wap-bap, ba-da-di-da-da
-                    Wap-bap, ba-da-di-da-da
-                    Wap-bap, ba-da-da-da-da-da</p>
-            </div>
-            <div class="carousel-item">
-                <h2>Project 3</h2>
-                <img src="catimage.jpg" alt="Projekt 3 Bild">
-                <p>I get up late, I stub my toe
-                    I've got a few missed calls
-                    I lost my job, I didn't know
-                    And that's not good at all
-                    I get my bag, I go outside
-                    Just mindin' my own biz
-                    I go to pay, but my card's been denied
-                    Well, that's just how it is</p>
-            </div>
-        </div>
-        <div class="carousel-controls">
-            <span class="prev" id="prev">&#10094;</span>
-            <span class="next" id="next">&#10095;</span>
-        </div>
-    </section>
-
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function () {
-            var navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
-    <script>
-        let currentIndex = 0;
-        const items = document.querySelectorAll('.carousel-item');
-        const totalItems = items.length;
-
-        document.getElementById('next').addEventListener('click', function() {
-            showNextItem();
-        });
-
-        document.getElementById('prev').addEventListener('click', function() {
-            showPreviousItem();
-        });
-
-        function showNextItem() {
-            items[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % totalItems;
-            items[currentIndex].classList.add('active');
-        }
-
-        function showPreviousItem() {
-            items[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-            items[currentIndex].classList.add('active');
-        }
-
-        setInterval(showNextItem, 30000);
-
-        items[currentIndex].classList.add('active');
-    </script>
-
-    <script>
-        function checkPassword() {
-            var password = prompt("Bitte geben Sie das Passwort ein:");
-            var correctPassword = "ohaaa"; // na, du auch hier? huh.. das ist jetzt komisch. Jetzt gib schon das Passwort ein und guck dir an was du getan hast.
-
-            if (password === correctPassword) {
-                window.location.href = "secrets.html";
-            } else {
-                alert("Falsches Passwort");
-            }
-        }
-    </script>
+     <main class="main">
+        <aside class="sidebar">
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="#">Welcome</a></li>
+              <li><a href="#">Who I Am</a></li>
+              <li><a href="#">What I Do</a></li>
+              <li><a href="#">Get In Touch</a></li>
+              <li><a href="#">Riddles</a></li>
+            </ul>
+          </nav>
+        </aside>
+      
+        <section class="twitter">
+          <div class="container">
+            <a target="_blank" href="https://github.com/Tobimakkaroni">
+              <img class="social" src="cat.png">
+            </a>
+            <p>Follow me</p>
+            <p>on github</p>
+          </div>
+        </section>
+      </main>
 </body>
 </html>
