@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Words</title>
+    <style>
+        body {
+            position: relative;
+            height: 2000px;
+            overflow: hidden;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .word {
+            position: absolute;
+            font-size: 14px;
+            color: #000;
+            cursor: pointer;
+        }
+        .letter-f {
+            position: absolute;
+            font-size: 50px;
+            color: red;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        .center-text {
+
+            font-size: 36px;
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const words = [
+            "apple", "banana", "cat", "dog", "elephant", "fish", "grape", "house", "island", "jungle",
+            "kangaroo", "lemon", "mountain", "notebook", "orange", "pencil", "queen", "river", "snake",
+            "tiger", "umbrella", "vase", "window", "xylophone", "yogurt", "zebra", "airplane", "bottle",
+            "car", "diamond", "engine", "flower", "guitar", "hat", "ice", "jacket", "key", "lamp",
+            "moon", "nest", "ocean", "piano", "quilt", "rocket", "star", "train", "uniform", "violin",
+            "wheel", "xenon", "yacht", "zoo", "ant", "bush", "clock", "door", "eagle", "frog", "glove",
+            "hammer", "ink", "jar", "kite", "leaf", "map", "needle", "owl", "pearl", "quartz", "ring",
+            "ship", "tree", "unicorn", "vulture", "watch", "x-ray", "yo-yo", "zipper", "arch", "bridge",
+            "cloud", "desk", "earth", "feather", "glass", "hill", "iceberg", "jungle", "kettle", "lion",
+            "planet", "question", "rose", "sun", "tower", "universe", "village", "whale", "xylophone",
+            "yarn", "zeppelin", "arrow", "book", "crystal", "diamond", "energy", "feather", "guitar",
+            "hammer", "island", "jewel", "knife", "lake", "mountain", "nectar", "orchid", "pearl",
+            "quiver", "rose", "stone", "turtle", "umbrella", "valley", "wave", "xenon", "yellow", "zinc",
+            "airport", "balloon", "cactus", "desert", "engineer", "fire", "garden", "honey", "ice", "juice",
+            "kitchen", "library", "password", "night", "octopus", "puzzle", "rainbow", "snow", "tea", "underwater",
+            "volcano", "wizard", "xylophone", "yawn", "zipper", "astronaut", "battery", "cake", "drum", "echo",
+            "forest", "gravel", "helicopter", "internet", "jungle", "kettle", "lantern", "microphone", "network",
+            "oxygen", "pyramid", "quilt", "robot", "sailboat", "technology", "umbrella", "vortex", "whistle",
+            "x-ray", "yogurt", "zebra", "acorn", "beetle", "cave", "dolphin", "earring", "fossil", "giraffe",
+            "helmet", "iceberg", "journal", "koala", "lighthouse", "moonlight", "nebula", "octagon", "parrot",
+            "quasar", "ring", "satellite", "thunder", "uplift", "volleyball", "whirlpool", "xenon", "yellow", "zip"
+        ];
+
+        const body = document.body;
+        const totalWords = 1000;
+
+        function createWordElement(word) {
+            const wordElement = document.createElement('div');
+            wordElement.className = 'word';
+            wordElement.textContent = word;
+            wordElement.style.top = Math.random() * 2000 + 'px';
+            wordElement.style.left = Math.random() * window.innerWidth + 'px';
+            wordElement.style.fontSize = Math.random() * 10 + 10 + 'px';
+            wordElement.style.color = '#' + Math.floor(Math.random()*16777215).toString(16);
+            if (word === "password") {
+                wordElement.addEventListener('click', () => {
+                    document.querySelectorAll('.word').forEach(el => el.remove());
+
+                    const centerText = document.createElement('div');
+                    centerText.className = 'center-text';
+                    centerText.textContent = 'You Got It!';
+                    body.appendChild(centerText);
+                });
+            }
+            return wordElement;
+        }
+
+        for (let i = 0; i < totalWords; i++) {
+            const word = words[Math.floor(Math.random() * words.length)];
+            const wordElement = createWordElement(word);
+            body.appendChild(wordElement);
+        }
+    </script>
+</body>
+</html>
