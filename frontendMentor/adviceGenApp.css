@@ -1,0 +1,77 @@
+body, html {
+    background: hsl(218, 23%, 16%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#advice-container {
+    background: hsl(217, 19%, 24%);
+    padding: 2rem;
+    border-radius: 1rem;
+    height: fit-content;
+    width: min-content; /* wtf das muss ich mir merken, wtf wtf wtf */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+#advice-button {
+    all: unset;
+    background: hsl(150, 100%, 66%);
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    bottom: -55px;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+#advice-button:hover {
+    box-shadow: 0 0 25px rgba(150, 255, 150, 1);
+    cursor: pointer;
+}
+
+svg {
+    justify-content: center;
+    align-items: center;
+}
+
+#advice-id {
+    text-transform: uppercase;
+    justify-content: start;
+    align-items: start;
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+#advice-divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+    bottom: -25px;
+}
+
+#advice-divider svg {
+    display: block;
+}
