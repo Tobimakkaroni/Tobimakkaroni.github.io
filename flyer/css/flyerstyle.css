@@ -13,7 +13,7 @@ body, html {
     position: relative;
     background-color: #FDF5E6;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 10px; /* Default padding */
 }
 
 .slider {
@@ -84,6 +84,7 @@ body, html {
     padding: 40px;
     color: #fff;
     text-align: center;
+    margin-top: 120px; /* Adjust this if needed */
 }
 
 .slider-content h2 {
@@ -104,6 +105,10 @@ body, html {
         flex-direction: column;
         width: calc(100% - 20px);
         margin: 0 auto;
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .slider-content {
@@ -132,6 +137,10 @@ body, html {
     .arrow {
         font-size: 30px;
         padding: 5px;
+    }
+
+    .container {
+        padding: 10px; /* Ensure padding is applied on very small screens */
     }
 
     .slider-content {
