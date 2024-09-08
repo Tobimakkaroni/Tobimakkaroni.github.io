@@ -19,7 +19,7 @@ const slides = [
             <div class="background-wrapper"></div>
             <div class="content-wrapper">
                 <h2>Getränkekarte</h2>
-                <p style="text-align: center; font-size: 28px; margin: 0; padding: 0;"><strong>Alkoholfreies<br></strong></p>
+                <p style="text-align: center; font-size: 28px; margin: 0; padding: 0; margin-top: 30px;"><strong>Alkoholfreies<br></strong></p>
                 <p style="text-align: left;">
                 <strong>Wasser</strong> still oder mit Kohlensäure<br>
                 <strong>Cola/Fanta/Sprite</strong><br>

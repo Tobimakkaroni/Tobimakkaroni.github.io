@@ -38,6 +38,7 @@ body, html {
     transition: background-color 0.5s ease;
     line-height: 1.6;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .arrow {
@@ -62,6 +63,7 @@ body, html {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
+    padding: 40px;
 }
 
 .slide-getraenke .background-wrapper {
@@ -81,8 +83,10 @@ body, html {
 .slide-getraenke .content-wrapper {
     position: relative;
     z-index: 1;
-    padding: 40px;
-    color: #fff;
+    color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -148,4 +152,5 @@ body, html {
 .slide-getraenke h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #fff;
 }
