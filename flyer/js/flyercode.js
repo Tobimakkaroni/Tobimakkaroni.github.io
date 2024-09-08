@@ -3,23 +3,40 @@ const slides = [
         title: 'Ablauf',
         content: `
             <h2>Ablauf des Abschlussfestes</h2>
-            <p><strong>17:00 Uhr</strong> – Begrüßung der Gäste</p>
-            <p><strong>17:30 Uhr</strong> – Ansprache der Schulleitung</p>
-            <p><strong>18:00 Uhr</strong> – Zertifikatsübergabe und Ehrungen</p>
-            <p><strong>19:00 Uhr</strong> – Abendessen & Buffet-Eröffnung</p>
-            <p><strong>20:30 Uhr</strong> – Livemusik & Tanz</p>
-            <p><strong>22:00 Uhr</strong> – Dankesrede und Überraschung</p>
-            <p><strong>23:00 Uhr</strong> – Ausklang und Ende der Veranstaltung</p>
+            <p><strong>17:00 Uhr</strong> - Begrüßung der Gäste</p>
+            <p><strong>17:30 Uhr</strong> - Ansprache der Schulleitung</p>
+            <p><strong>18:00 Uhr</strong> - Zertifikatsübergabe und Ehrungen</p>
+            <p><strong>19:00 Uhr</strong> - Abendessen & Buffet-Eröffnung</p>
+            <p><strong>20:30 Uhr</strong> - Livemusik & Tanz</p>
+            <p><strong>22:00 Uhr</strong> - Dankesrede und Überraschung</p>
+            <p><strong>23:00 Uhr</strong> - Ausklang und Ende der Veranstaltung</p>
         `,
         className: 'slide-ablauf'
     },
     {
         title: 'Getränke',
         content: `
-            <h2>Getränkekarte</h2>
-            <p><strong>Alkoholfreies:</strong> Wasser, Cola, Fanta, Sprite, Apfelschorle, Bier (alkoholfrei)</p>
-            <p><strong>Alkoholhaltiges:</strong> Bier, Apfelwein (sauer oder mit Cola gespritzt)</p>
-            <p><strong>Weine:</strong> Doppio Passo Primitivo (rot oder rosé), Kriedricher Sandgrub (Riesling halbtrocken)</p>
+            <div class="background-wrapper"></div>
+            <div class="content-wrapper">
+                <h2>Getränkekarte</h2>
+                <p style="text-align: center; font-size: 28px; margin: 0; padding: 0;"><strong>Alkoholfreies<br></strong></p>
+                <p style="text-align: left;">
+                <strong>Wasser</strong> still oder mit Kohlensäure<br>
+                <strong>Cola/Fanta/Sprite</strong><br>
+                <strong>Apfelschorle</strong><br>
+                <strong>Bier</strong> (alkoholfrei)
+                </p>
+                <p style="text-align: center; font-size: 28px; margin: 0; padding: 0;"><strong>Alkoholhaltiges<br></strong></p>
+                <p style="text-align: left;">
+                <strong>Bier</strong><br>
+                <strong>Apfelwein</strong> (sauer-oder mit Cola gespritzt)
+                </p>
+                <p style="text-align: center; font-size: 28px; margin: 0; padding: 0;"><strong>Weine<br></strong></p>
+                <p style="text-align: left;">
+                <strong>Doppio Passo Primitivo</strong> (rot oder rosé)<br>
+                <strong>Kriedricher Sandgrub</strong> (Riesling halbtrocken)
+                </p>
+            </div>
         `,
         className: 'slide-getraenke'
     },
