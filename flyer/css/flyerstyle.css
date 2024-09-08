@@ -12,6 +12,7 @@ body, html {
     align-items: center;
     position: relative;
     background-color: #FDF5E6;
+    box-sizing: border-box;
     padding: 0 10px;
 }
 
@@ -21,7 +22,7 @@ body, html {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .slider-content {
@@ -35,6 +36,7 @@ body, html {
     border-radius: 15px;
     transition: background-color 0.5s ease;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 .arrow {
@@ -65,7 +67,8 @@ body, html {
 @media (max-width: 768px) {
     .slider {
         flex-direction: column;
-        width: 90%;
+        width: calc(100% - 20px);
+        margin: 0 auto;
     }
 
     .slider-content {
@@ -77,7 +80,8 @@ body, html {
 
 @media (min-width: 764px) and (max-width: 795px) {
     .slider {
-        width: 95%;
+        width: calc(100% - 20px);
+        margin: 0 auto;
     }
 }
 
