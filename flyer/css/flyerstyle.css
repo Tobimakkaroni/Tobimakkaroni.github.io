@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #FDF5E6;
+    padding: 0 10px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    width: 80%;
+    text-align: center;
+    font-size: 24px;
+    padding: 40px;
+    background-color: #FADADD;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+    line-height: 1.6;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 50px;
+    color: #888;
+    user-select: none;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #007BFF;
+}
+
+.slide-ablauf {
+    background-color: #FFE4B5;
+}
+
+.slide-getraenke {
+    background-color: #B0E0E6;
+}
+
+.slide-essen {
+    background-color: #98FB98;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .slider-content {
+        width: 100%;
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 764px) and (max-width: 795px) {
+    .slider {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        width: 90%;
+    }
+
+    .arrow {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .slider-content {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+}
