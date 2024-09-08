@@ -60,8 +60,27 @@ body, html {
     background-color: #B0E0E6;
 }
 
-.slide-essen {
-    background-color: #98FB98;
+.slider-content h2 {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.slider-content p {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.slide-getraenke h2 {
+    background-image: url('/flyer/media/drinks.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    height: 200px;
 }
 
 @media (max-width: 768px) {
@@ -75,6 +94,10 @@ body, html {
         width: 100%;
         font-size: 18px;
         padding: 20px;
+    }
+
+    .slider-content h2 {
+        font-size: 24px;
     }
 }
 
@@ -99,5 +122,9 @@ body, html {
         width: 100%;
         font-size: 16px;
         padding: 15px;
+    }
+
+    .slider-content h2 {
+        font-size: 20px;
     }
 }
